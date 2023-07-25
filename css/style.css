@@ -1,0 +1,485 @@
+*{
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Source Sans 3', sans-serif;
+}
+a, a:hover{
+	text-decoration: none;
+}
+/*---global style for heading title strt*/
+.title{
+	width: 100%;
+	padding: 0px 0px 40px;
+}
+.title h4{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    color: #008ed6;
+    text-transform: uppercase;
+}
+.title h1{
+    font-size: 46px;
+    font-weight: 650;
+    line-height: 1.2em;
+    color: #000;
+    margin: 15px 0px 20px;
+}
+/*---global style for heading title end*/
+.header{
+	width: 100%;
+	background: rgba(332, 4, 21, 0.5);
+}
+.header .navbar .navbar-brand{
+	font-size: 25px;
+	font-weight: 600;
+	color: #000;
+}
+.header .navbar-nav .nav-item .nav-link{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0 30px;
+}
+.header .navbar-nav .nav-item .nav-link:hover{
+    color: blue;
+    letter-spacing: 1px;
+    transform: scale(1.2);
+}
+.header .navbar-toggler{
+    background: #08c;
+}
+.header .navbar-toggler .fa-bars{
+    color: #fff;
+}
+.top-header{
+	width: 100%;
+	padding: 10px 0;
+	background: lightblue;
+}
+.isStuck{
+    left:0px;
+    width:100%;
+    background: rgba(332, 4, 21, 0.5);
+}
+.fgh{
+	width: 100%;
+	display: flex;
+}
+.fgh .gmail .fa-envelope{
+    font-size: 12px;
+    color: blue;
+}
+.fgh .rfr{
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+	color: blue;
+}
+.fgh .phone .fa-phone{
+	font-size: 12px;
+    color: blue;
+    margin-left: 80px;
+}
+.header .navbar-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 15;
+}
+.icon{
+	margin-left: 25px;
+}
+.icon .fa{
+	padding: 5px 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: blue;
+	background: white;
+}
+.navbar .btn{
+	border: 1px solid blue;
+	padding: 10px 20px;
+	background: none;
+	font-size: 14px;
+	font-family: sans-serif;
+	cursor: pointer;
+	margin: 7px 0 0 40px;
+}
+.navbar .btn1{
+	color: blue;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+}
+.navbar .btn1:hover{
+	color: #fff;
+}
+.btn1::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background:blue ;
+	z-index: -1;
+	transition: 0.8s;
+}
+.btn1::before{
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.btn1:hover::before{
+	height: 180%;
+}
+.slider{
+    width: 100%;
+    position: relative;
+}
+.slider img{
+    width: 100%;
+    height: 400px;
+   transform: scale(1.1, 1.1);
+   -webkit-animation-name: zoomin;
+   -webkit-animation-duration: 10s;
+   animation-name: zoomin;
+   animation-duration: 10s;
+}
+@-webkit-keyframes zoomin{
+    from{transform: scale(1, 1);}
+    to{transform: scale(1.1, 1.1);}
+}
+@keyframes zoomin{
+    from{transform: scale(1, 1);}
+    to{transform: scale(1.1, 1.1);}
+}
+.slider .carousel-caption{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #000;
+    text-align: center;
+}
+.slider .carousel-caption h5{
+    font-size: 40px;
+    font-weight: bold;
+}
+.slider .carousel-caption p{
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 110px 0;
+    background: seashell;
+}
+.firstSection > div{
+    width: 30%;
+}
+.firstSection h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+.firstSection .about-metext{
+    opacity: 0;
+}
+.about-metext.animate__animated{
+    opacity: 1;
+}
+.leftSection{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.about-part1{
+    opacity: 0;
+}
+.about-part1.animate__animated{
+    opacity: 1;
+}
+.leftSection .prple{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(178, 107, 228);
+}
+#element{
+    color: rgb(178, 107, 228);
+}
+.leftSection .buttons{
+    padding: 50px 0;
+}
+.leftSection .btn{
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.leftSection .btn:hover{
+    background:white ;
+    color: #1e2167;
+    border: 2px solid #1e2167;
+}
+.rightSection img{
+    width: 100%;
+    text-align: center;
+    
+}
+.services{
+    width: 100%;
+    padding: 0 40px;
+    background: seashell;
+}
+.services .tit h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+.services .tit P{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+.inp{
+    opacity: 0;
+}
+.inp.animate__animated{
+    opacity: 1;
+}
+.intext{
+    opacity: 0;
+}
+.intext.animate__animated{
+    opacity: 1;
+}
+.services .inner-ser{
+    width: 100%;
+    padding: 40px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.in1{
+    opacity: 0;
+}
+.in1.animate__animated{
+    opacity: 1;
+}
+.in2{
+    opacity: 0;
+}
+.in2.animate__animated{
+    opacity: 1;
+}
+.in3{
+    opacity: 0;
+}
+.in3.animate__animated{
+    opacity: 1;
+}
+.services .inner-ser .sericon .fa{
+   font-size: 30px; 
+   margin-bottom: 10px;
+}
+.services .inner-ser h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: blue;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.services .inner-ser p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+.services .inner-ser .btn2{
+    padding: 9px 20px;
+    border: 1px solid blue;
+    background: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: blue;
+    transition: 0.8s;
+}
+.services .inner-ser .btn2:hover{
+    color: #fff;
+    background-color: blue;
+    border: 1px solid blue;
+}
+.contact{
+    width: 100%;
+    padding: 130px 0;
+    background-color: seashell;
+}
+.contact h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact .inp{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contact .vbn{
+    margin-top: 150px;
+}
+.in4{
+    opacity: 0;
+}
+.in4.animate__animated{
+    opacity: 1;
+}
+.contact .con-ad{
+    margin-bottom: 50px;
+}
+.contact .con-ad .con-a .fa{
+    font-size: 24px;
+    margin-left: 40px;
+    color: blue;
+}
+.contact .con-ad .con-t{
+    position: relative;
+    bottom: 8px;
+}
+.contact .con-ad .con-t h6{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contact .con-ad .con-t p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.contact-form form{
+    width: 100%;
+    background-color: #000;
+    padding: 60px;
+    border-radius: 10px;
+    margin-left: -30px;
+    position: relative;
+    z-index: 2;
+
+}
+.in5{
+    opacity: 0;
+}
+.in5.animate__animated{
+    opacity: 1;
+}
+.contact-form form label{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact-form form .mb-3{
+    margin-bottom: 20px;
+}
+.contact-form form .form-control{
+    width: 100%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+#emailHelp{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #eee;
+}
+form #exampleCheck1{
+    width: 10px;
+    height: 10px;
+}
+.contact-form .form-check .form-check-label{
+    font-size: 10px;
+    position: relative;
+    text-transform: capitalize;
+    bottom: 5px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.contact-form .btn-primary{
+    padding: 9px 50px;
+    border: 1px solid blue;
+    background: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: blue;
+    transition: 0.8s;
+    margin-left: 180px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.contact-form .btn-primary:hover{
+    border: 1px solid blue;
+    background: #fff;
+    color: blue;
+}
+.contact .map{
+    position: relative;
+    z-index: 1;
+    margin-top: -180px;
+}
+.in6{
+    opacity: 0;
+}
+.in6.animate__animated{
+    opacity: 1;
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    background: rgba(332, 4, 21, 0.5);
+}
+.footer p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.footer .fa{
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.footer .fa:hover{
+    color: white;
+}
